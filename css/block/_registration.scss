@@ -1,0 +1,92 @@
+.registration{
+    margin-bottom: 8%;
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+      &__form{
+             &__title{
+                 margin-bottom: 20px;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;                
+             }
+             &__text{
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;               
+                color: #B1B1B1;               
+             }
+             &__name{
+                 margin-bottom: 0px;
+             }
+             &__button{
+                 margin-top: 39px;
+                 cursor: pointer;
+                 background-color: $color-p;
+                 font-size: 14px;
+                 line-height: 17px;
+                 color: #FFFFFF;
+                 padding: 14px 20px; 
+                 border: none;
+                 transition: all 2s;
+                 transform-origin: top left; 
+                   &:hover{
+                     transform: rotate(-40deg);
+                     transform: scale(1.5);
+                   }             
+             }
+             &__input{
+                 margin-bottom: 30px;
+                 margin-top: 30px;
+             }
+             &__img{
+                 margin-left: 20px;
+             }
+      }
+}
+.input-radio{
+    cursor: pointer;
+    height: 17px;
+    width: 17px;
+}
+.input-label{
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 10px;
+      &:not(:last-child){
+          margin-right: 20px;
+      }
+}
+.superiority{
+        margin-left: 16%;
+        flex-direction: column;
+       &__title{
+        font-weight: lighter;
+        font-size: 24px;
+        line-height: 29px;
+       }
+       &__text{
+        margin-top: 22px;
+        font-weight: lighter;
+        font-size: 24px;
+        line-height: 29px;        
+       }
+       &__list{
+        margin-top: 21px;
+        list-style-type: none;
+          &__item{
+              font-weight: lighter;
+              font-size: 24px;
+              line-height: 29px;
+               &:not(:first-child){
+                   margin-top: 16px;
+               }            
+          }
+          &__img{
+            margin-right: 22px;
+          }
+       }
+}

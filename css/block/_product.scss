@@ -1,0 +1,109 @@
+.slider{
+    background: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+       &__img{
+           margin-bottom: 30px;
+       }
+       &__bth{
+        background: rgba(42, 42, 42, 0.15);
+        color: black;
+        font-size: large;
+        border: none;
+        position: absolute;
+        height: 47px;
+        width: 47px;
+          &:hover{
+           color: $color-p;
+          }
+          &-right{
+              padding: 12px 17px 12px 12px;
+              right: 0 ;
+          }
+          &-left{
+              padding: 12px 12px 12px 17px;
+              left: 0;
+          }
+       }
+}
+.information1{
+    background-color: white;
+    position: relative;
+    margin-top: -60px;
+    border: 1px solid #EAEAEA;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+      &-text{
+          &__title{
+              text-align: center;
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 17px;
+              color: $color-p;
+              border-bottom: 3px solid $color-p ;
+              padding-bottom: 12px;
+              margin-bottom: 12px;
+              
+          }
+          &__title1{
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+            color: #4D4D4D;
+            text-align: center;
+            margin-bottom: 48px;   
+          }
+          &__description{
+              text-align: center;
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 17px;
+              text-align: center;
+              color: #5E5E5E;
+              margin-bottom: 32px;
+          }
+          &__price{
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: $color-p;
+            text-align: center;
+            margin-bottom: 64px;
+          }
+      }
+      &-form{
+          margin-top: 63px;
+            &-bth{
+                &:hover{
+                    cursor: pointer;
+                }
+                margin: 0 auto;
+                margin-top: 48px;
+                margin-bottom: 64px;
+                display: flex;
+              width: 212px;
+              border-color: $color-p;
+              background-color: white;
+              color: $color-p;
+              font-size: 16px;
+              line-height: 19px;
+              padding: 12px 20px 12px 12px;
+                &-img{
+                    margin-right: 23px;
+                }
+            }
+      }
+}
+.line{
+     border: 1px solid #EAEAEA;
+}
+.bth-text{
+    text-align: center;
+}
+.product-catolog{
+    margin-top: 128px;
+}

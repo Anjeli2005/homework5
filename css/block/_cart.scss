@@ -1,0 +1,138 @@
+@mixin button {
+    cursor: pointer;
+} 
+.shopping-cart{
+    margin-bottom: 128px;
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-between;
+      &__button{
+          display: flex;
+          justify-content: space-between;
+          &--style {
+            @include button();
+              padding: 16px 40px;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                background-color: white;
+                border: 1px solid #A4A4A4;
+          }
+      }
+}
+.product{
+    width: 600px;
+    display: flex;
+    box-shadow:17px 19px 24px  rgba(0, 0, 0, 0.13);
+     &:not(:last-child){
+         margin-bottom: 40px;
+     }
+     &:last-child{
+         margin-bottom: 72px;
+     }
+        &__img{
+            width: 262px;
+            height: 306px;
+        }
+        &__img-cross{
+            text-align: right ;
+        }
+        &__description{
+            margin-left: 36px;
+                 &--sb{
+                     display: flex;
+                     justify-content: space-between;
+                     margin-top: 22px;
+                     margin-bottom: 42px;
+                 }
+                 &-img{
+                     margin-left: 60px;
+                     height: 18px;
+                     width: 18px;
+                 }
+                 &__title{
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #222222;
+                 } 
+                 &__text{
+                    font-size: 22px;
+                    line-height: 26px;  
+                    color: #575757;
+                     &:not(:last-child){
+                         margin-bottom: 6px;
+                     }
+                 }       
+        }
+}
+.text--color{
+    color: $color-p;
+}
+.text--border{
+    border: 1px solid #EAEAEA;
+    padding: 1px 15px;
+    margin-left: 24px;
+}
+.form1{
+    display:flex ;
+    flex-direction: column;
+       &__text{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 20px;
+       }
+       &__adress{
+         display: flex;
+         flex-direction: column;
+            &__input{
+                margin-bottom: 21px;
+                width: 360px;
+                padding: 13px 0 16px 17px ;
+            }   
+       }
+       &__button{
+        @include button();
+        background-color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 110px;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        color: #4A4A4A; 
+        border: 1px solid #A4A4A4;
+        }  
+    } 
+.total-price{
+    margin-top: 57px;
+    width: 360px;
+    background: #F5F3F3;
+    padding: 39px 34px 42px 43px;
+        &__text{
+            text-align: end;
+            font-size: 11px;
+            line-height: 13px;
+            color: #4A4A4A;
+            margin-bottom: 12px;
+        }
+        &__price{
+            text-align: end;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 21px;
+        }
+        &__button{
+            @include button();
+            margin-top: 17px;
+            background-color: $color-p;
+            color: white;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            padding: 15px 42px;
+            width: 100%;
+            border: none;
+        }
+}
